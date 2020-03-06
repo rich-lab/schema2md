@@ -1,6 +1,6 @@
 {
   "name": "schema2md",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A lightweight markdown generator from JSON Schema.",
   "main": "lib/index.js",
   "files": [
