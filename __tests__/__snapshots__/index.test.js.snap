@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`doc & i18n 1`] = `
+"# foo.config.js
+ 
+My Config File
+
+## type
+
+- 类型: \`\\"foo\\" | \\"bar\\"\`
+- 描述: TYPE
+- 昵称: ulivz
+
+## env
+
+- 类型: \`string\`
+- 描述: ENV"
+`;
+
+exports[`merge md 1`] = `
+"# foo.config.js
+ 
+My Config File
+
+## type
+
+- 类型: \`\\"foo\\" | \\"bar\\"\`
+- 描述: TYPE's description
+
+
+XXXXXXXX type XXXXXXXX
+
+## env
+
+- 类型: \`string\`
+- 描述: ENV's description
+
+
+XXXXXXXX env XXXXXXXX"
+`;
+
+exports[`simple 1`] = `
+"# foo.config.js
+ 
+My Config File
+
+## type
+
+- Type: \`\\"foo\\" | \\"bar\\"\`
+- Description: TYPE's description
+
+## env
+
+- Type: \`string\`
+- Description: ENV's description"
+`;

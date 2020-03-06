@@ -1,0 +1,38 @@
+{
+  "title": "foo.config.js",
+  "description": "My Config File",
+  "doc": {
+    "locales": {
+      "en-US": {
+        "props": {
+          "nickname": "nickname"
+        }
+      },
+      "zh-CN": {
+        "props": {
+          "nickname": "昵称"
+        }
+      }
+    }
+  },
+  "properties": {
+    "type": {
+      "description": "TYPE",
+      "type": "string",
+      "enum": [
+        "foo",
+        "bar"
+      ],
+      "doc": {
+        "props": {
+          "nickname": "ulivz"
+        }
+      }
+    },
+    "env": {
+      "description": "ENV",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}
