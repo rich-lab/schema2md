@@ -11,10 +11,61 @@ tnpm install json-schema-2-markdown --save
 ## Usage
 
 ```js
-const jsonSchema2Markdown = require('json-schema-2-markdown')
+const { jsonschema2md } = require('json-schema-2-markdown')
 
-jsonSchema2Markdown()
-//=> foo
+jsonschema2md({
+  cwd: '...',
+  src: [
+    { schemaPath: 'foo.json', outputPath: 'foo.md' },
+    { schemaPath: 'bar.json', outputPath: 'bar.md' },
+  ],
+  write: false
+})
+```
+
+## Example
+
+### Simple 
+
+- Input:
+
+```json
+{
+  "title": "foo.config.js",
+  "description": "My Config File",
+  "properties": {
+    "type": {
+      "description": "TYPE's description",
+      "type": "string",
+      "enum": [
+        "foo",
+        "bar"
+      ]
+    },
+    "env": {
+      "description": "ENV's description",
+      "type": "string"
+    }
+  }
+}
+```
+
+Output:
+
+```md
+"# foo.config.js
+ 
+My Config File
+
+## type
+
+- Type: `"foo" | "bar"`
+- Description: TYPE's description
+
+## env
+
+- Type: `string`
+- Description: ENV's description"
 ```
 
 ## Contributing
