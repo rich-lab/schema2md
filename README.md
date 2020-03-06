@@ -1,11 +1,11 @@
-# json-schema-2-markdown
+# schema2md
 
-[![NPM version](https://badgen.net/npm/v/json-schema-2-markdown)](https://npmjs.com/package/json-schema-2-markdown) [![NPM downloads](https://badgen.net/npm/dm/json-schema-2-markdown)](https://npmjs.com/package/json-schema-2-markdown) [![CircleCI](https://badgen.net/circleci/github/ulivz/json-schema-2-markdown/master)](https://circleci.com/gh/ulivz/json-schema-2-markdown/tree/master)
+[![NPM version](https://badgen.net/npm/v/schema2md)](https://npmjs.com/package/schema2md) [![NPM downloads](https://badgen.net/npm/dm/schema2md)](https://npmjs.com/package/schema2md) [![CircleCI](https://badgen.net/circleci/github/ulivz/schema2md/master)](https://circleci.com/gh/ulivz/schema2md/tree/master)
 
 ## Install
 
 ```bash
-tnpm install json-schema-2-markdown --save
+tnpm install schema2md --save
 ```
 
 ## Example
@@ -54,7 +54,7 @@ My Config File
 ## Usage
 
 ```js
-const { transform } = require('json-schema-2-markdown')
+const { transform } = require('schema2md')
 
 transform({
   schemaPath: 'fixtures/simple.json',
@@ -149,7 +149,7 @@ interface IBatchTransformOptions {
 
 ## Author
 
-**json-schema-2-markdown** © [ULIVZ](https://github.com/ulivz), Released under the [MIT](./LICENSE) License.<br>
+**schema2md** © [ULIVZ](https://github.com/ulivz), Released under the [MIT](./LICENSE) License.<br>
 
 
 > [github.com/ulivz](https://github.com/ulivz) · GitHub [@ULIVZ](https://github.com/ulivz) · Twitter [@_ulivz](https://twitter.com/_ulivz)

@@ -1,5 +1,5 @@
 {
-  "name": "json-schema-2-markdown",
+  "name": "schema2md",
   "version": "0.1.0",
   "description": "A lightweight markdown generator from JSON Schema.",
   "main": "index.js",
