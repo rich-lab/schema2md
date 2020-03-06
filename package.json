@@ -19,6 +19,7 @@
   "author": "ulivz <chl814@foxmail.com>",
   "license": "MIT",
   "dependencies": {
+    "fs-extra": "^8.1.0",
     "lodash.merge": "^4.6.2"
   },
   "devDependencies": {

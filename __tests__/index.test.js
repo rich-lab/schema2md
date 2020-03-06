@@ -1,8 +1,13 @@
 const { transform, batchTransform } = require('../lib')
 
+const DEFAULT_CONFIG = {
+  cwd: __dirname,
+  write: false,
+}
+
 it('simple', async () => {
   const ret = await transform({
-    cwd: __dirname,
+    ...DEFAULT_CONFIG,
     schemaPath: 'fixtures/simple.json',
     outputPath: 'docs/config/README.md',
   })
@@ -12,7 +17,7 @@ it('simple', async () => {
 
 it('doc & i18n', async () => {
   const ret = await transform({
-    cwd: __dirname,
+    ...DEFAULT_CONFIG,
     locale: 'zh-CN',
     schemaPath: 'fixtures/doc.json',
     outputPath: 'docs/config/README.md',
@@ -23,7 +28,7 @@ it('doc & i18n', async () => {
 
 it('merge md', async () => {
   const ret = await transform({
-    cwd: __dirname,
+    ...DEFAULT_CONFIG,
     locale: 'zh-CN',
     schemaPath: 'fixtures/merge-md.json',
     outputPath: 'docs/config/README.md',
@@ -45,23 +50,19 @@ it('batchTransform', async () => {
     }
   ]
 
-  const defaultConfog = {
-    cwd: __dirname,
-    write: false,
-  }
 
   const ret = await batchTransform({
-    ...defaultConfog,
+    ...DEFAULT_CONFIG,
     configs,
   })
 
   const ret1 = await transform({
-    ...defaultConfog,
+    ...DEFAULT_CONFIG,
     ...configs[0]
   })
 
   const ret2 = await transform({
-    ...defaultConfog,
+    ...DEFAULT_CONFIG,
     ...configs[1]
   })
 
