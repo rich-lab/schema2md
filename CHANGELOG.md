@@ -1,3 +1,12 @@
+## [0.1.3](https://github.com/rich-lab/json-schema-2-markdown/compare/v0.1.2...v0.1.3) (2020-03-06)
+
+
+### Bug Fixes
+
+* wrap issue ([075b61f](https://github.com/rich-lab/json-schema-2-markdown/commit/075b61f54696814877ed216f7e9c4d8df0ebf7ce))
+
+
+
 ## [0.1.2](https://github.com/rich-lab/json-schema-2-markdown/compare/v0.1.1...v0.1.2) (2020-03-06)
 
 
