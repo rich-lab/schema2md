@@ -1,3 +1,12 @@
+## [0.1.2](https://github.com/rich-lab/json-schema-2-markdown/compare/v0.1.1...v0.1.2) (2020-03-06)
+
+
+### Bug Fixes
+
+* doesn't work ([702a411](https://github.com/rich-lab/json-schema-2-markdown/commit/702a41196c2dddd41ccebfdab4cbe0074d987549))
+
+
+
 ## [0.1.1](https://github.com/rich-lab/json-schema-2-markdown/compare/v0.1.0...v0.1.1) (2020-03-06)
 
 
