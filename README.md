@@ -8,26 +8,9 @@
 tnpm install json-schema-2-markdown --save
 ```
 
-## Usage
-
-```js
-const { jsonschema2md } = require('json-schema-2-markdown')
-
-jsonschema2md({
-  cwd: '...',
-  src: [
-    { schemaPath: 'foo.json', outputPath: 'foo.md' },
-    { schemaPath: 'bar.json', outputPath: 'bar.md' },
-  ],
-  write: false
-})
-```
-
 ## Example
 
-### Simple 
-
-- Input:
+- `Input`: 
 
 ```json
 {
@@ -50,10 +33,10 @@ jsonschema2md({
 }
 ```
 
-Output:
+- `Output`:
 
 ```md
-"# foo.config.js
+# foo.config.js
  
 My Config File
 
@@ -66,6 +49,93 @@ My Config File
 
 - Type: `string`
 - Description: ENV's description"
+```
+
+## Usage
+
+```js
+const { transform } = require('json-schema-2-markdown')
+
+transform({
+  schemaPath: 'fixtures/simple.json',
+  outputPath: 'docs/config/README.md',
+})
+```
+
+## API
+
+### .transform()
+
+- Type: `(options: ITransformOptions) => Promise<string>`
+- Description: `Get markdown output by JSON Schema.`
+
+Type of `ITransformOptions` is as follows:
+
+```typescript
+interface ITransformOptions {
+  /**
+   * Current working directory, used to calcaulate absolute path for "schemaPath"
+   * and "outputPath" with relative path, defaults to `process.cwd()`.
+   */
+  cwd?: string;
+  /**
+   * A relative path or an absolute path to a JSON Schema file. 
+   */
+  schemaPath: string;
+  /**
+   * A relative path or an absolute path to a output markdown file.
+   */
+  outputPath: string;
+  /**
+   * Whether to write output content to "outputPath".
+   */
+  write: boolean;
+  /**
+   * Current locale.
+   */
+  locale: string;
+  /**
+   * Specify a markdown file to be merged into the generated markdown.
+   */
+  schemaMarkdown: string;
+  /**
+   * Frontmatter content.
+   */
+  frontmatter: string;
+  /**
+   * Content at the below of h1.
+   */
+  heading: string;
+  
+}
+```
+
+### .batchTransform()
+
+- Type: `(options: IBatchTransformOptions) => Promise<string[]>`
+- Description: `Get markdown output by JSON Schema.`
+
+Type of `IBatchTransformOptions` is as follows:
+
+```typescript
+interface IBatchTransformOptions {
+  /**
+   * Global "cwd".
+   */
+  cwd: string;
+  /**
+   * Global "cwd".
+   */
+  locale: string;
+  /**
+   * Global "write".
+   */
+  write: string;
+  /**
+   * Meta transform config.
+   */
+  configs: ITransformOptions[];
+}
 ```
 
 ## Contributing
