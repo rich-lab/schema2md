@@ -1,6 +1,6 @@
 # schema2md
 
-[![NPM version](https://badgen.net/npm/v/schema2md)](https://npmjs.com/package/schema2md) [![NPM downloads](https://badgen.net/npm/dm/schema2md)](https://npmjs.com/package/schema2md) [![CircleCI](https://badgen.net/circleci/github/ulivz/schema2md/master)](https://circleci.com/gh/ulivz/schema2md/tree/master)
+[![NPM version](https://img.shields.io/npm/v/schema2md.svg?style=flat)](https://npmjs.com/package/schema2md) [![NPM downloads](https://img.shields.io/npm/dm/schema2md.svg?style=flat)](https://npmjs.com/package/schema2md) ![Node.js CI](https://github.com/rich-lab/schema2md/workflows/Node.js%20CI/badge.svg) [![codecov](https://codecov.io/gh/rich-lab/schema2md/branch/master/graph/badge.svg)](https://codecov.io/gh/rich-lab/schema2md)
 
 ## Install
 
