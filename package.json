@@ -9,7 +9,7 @@
   "scripts": {
     "test": "jest",
     "cov": "jest --coverage",
-    "lint": "xo",
+    "lint": "xo --fix lib",
     "prepublishOnly": "conventional-changelog -p angular -r 2 -i CHANGELOG.md -s"
   },
   "repository": {
@@ -28,7 +28,12 @@
     "xo": "0.23.0"
   },
   "xo": {
-    "prettier": true
+    "space": true,
+    "semicolon": false,
+    "prettier": true,
+    "rules": {
+      "no-await-in-loop": "off"
+    }
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
