@@ -24,7 +24,6 @@
   },
   "devDependencies": {
     "conventional-changelog-cli": "^2.0.31",
-    "eslint-config-sherry": "0.0.1",
     "jest-cli": "^25.1.0",
     "xo": "0.23.0"
   },
