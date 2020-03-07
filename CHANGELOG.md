@@ -1,3 +1,7 @@
+## [0.1.4](https://github.com/rich-lab/json-schema-2-markdown/compare/v0.1.3...v0.1.4) (2020-03-07)
+
+
+
 ## [0.1.3](https://github.com/rich-lab/json-schema-2-markdown/compare/v0.1.2...v0.1.3) (2020-03-06)
 
 
