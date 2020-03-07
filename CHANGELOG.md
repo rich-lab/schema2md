@@ -1,3 +1,12 @@
+## [0.1.5](https://github.com/rich-lab/json-schema-2-markdown/compare/v0.1.4...v0.1.5) (2020-03-07)
+
+
+### Features
+
+* expose resolveSchemaMarkdownPath ([9480287](https://github.com/rich-lab/json-schema-2-markdown/commit/9480287d1b66cb3a8279c97892d512c890853c0f))
+
+
+
 ## [0.1.4](https://github.com/rich-lab/json-schema-2-markdown/compare/v0.1.3...v0.1.4) (2020-03-07)
 
 
