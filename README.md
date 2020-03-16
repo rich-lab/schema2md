@@ -62,6 +62,10 @@ transform({
 })
 ```
 
+## Using in VuePress
+
+Here is seperate [VuePress plugin](https://github.com/vuepressjs/vuepress-plugin-schema2md) for you to use it at VuePress.
+
 ## API
 
 ### .transform()
